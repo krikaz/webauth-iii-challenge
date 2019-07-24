@@ -1,10 +1,8 @@
-const server = require('./api/server.js');
 const express = require('express');
+const server = express();
 
 const authRouter = require('./auth/auth-router.js');
 const usersRouter = require('./users/users-router.js');
-
-const server = express();
 
 server.use(express.json());
 
